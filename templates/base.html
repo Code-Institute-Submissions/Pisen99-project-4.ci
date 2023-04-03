@@ -33,17 +33,17 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Reservations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'bookings' %}">Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-arrow-right-to-bracket"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="nav-item"><a class="dropdown-item" href="">Login</a></li>
-                            <li class="nav-item"><a class="dropdown-item" href="">Register</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="{% url 'signup' %}">Sign Up</a></li>
                         </ul>
                     </div>
                 </ul>
@@ -55,8 +55,8 @@
         <div class="container">
             <div class="masthead-subheading"> s</div>
             <div class="masthead-heading text-uppercase"> s</div>
-            <a class="btn btn-primary btn-xl text-uppercase me-5" href="">Our Menu</a>
-            <a class="btn btn-primary btn-xl text-uppercase ms-5" href="">Book a Table</a>
+            <a class="btn btn-primary btn-xl text-uppercase me-5" href="{% url 'menu' %}">Our Menu</a>
+            <a class="btn btn-primary btn-xl text-uppercase ms-5" href="{% url 'bookings' %}">Book a Table</a>
         </div>
     </header>
     <!-------------------------- Content Section -------------------------->
