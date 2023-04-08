@@ -1,7 +1,12 @@
 from django.shortcuts import render
+from .models import Bookings
+from bookings.models import Bookings
 
 
-# Create your views here.
+def make_booking(request):
+    pass
+
+
 def index_view(request):
 
     return render(request, 'index.html')
