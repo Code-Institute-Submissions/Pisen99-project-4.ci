@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import Bookings
-from bookings.models import Bookings
+# from .models import Bookings
+# from bookings.models import Bookings
 
 
-def make_booking(request):
-    pass
+# def make_booking(request):
+#     pass
 
 
 def index_view(request):

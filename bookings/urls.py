@@ -3,10 +3,10 @@ from django.urls import path
 from . import views
 from .views import index_view, signup_view, login_view, resetpassword_view, contact_view, bookings_view, menu_view
 
-app_name = 'bookings'
+# app_name = 'bookings'
 
 urlpatterns = [
-    path('', views.make_booking, name='make_booking'),
+    # path('', views.make_booking, name='make_booking'),
     path('', index_view, name='index'),
     path('signup', signup_view, name='signup'),
     path('login', login_view, name='login'),
